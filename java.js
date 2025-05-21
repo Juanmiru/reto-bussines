@@ -7,12 +7,12 @@
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Hide any previous alerts
+                // esconde alertas previas
                 successAlert.style.display = 'none';
                 errorAlert.style.display = 'none';
                 whatsappPreview.style.display = 'none';
                 
-                // Get form data
+                // obtiene la informacion del formulario
                 const formData = new FormData(form);
                 
                 // Add hidden fields required by the API
