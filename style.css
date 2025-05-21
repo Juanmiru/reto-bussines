@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sección izquierda (hero) */
+.hero {
+    background-color: #010630;
+    color: white;
+    flex: 0.6;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 600px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    height: auto;
+}
+
+.hero p {
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-top: 2em;
+}
+
+/* Sección derecha (registro) */
+.registration-section {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+.registration-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.registration-container h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #FF00B1;
+    margin-bottom: 35px;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Teléfono con prefijo */
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-input select {
+    flex: 1;
+}
+
+.phone-input input {
+    flex: 2;
+}
+
+/* Botón */
+button[type="submit"] {
+    background-color: #FF00B1;
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e000a6;
+}
+
+/* Alertas y mensaje de éxito */
+.alert {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.alert-success {
+    background-color: #bfc4f1;
+    color: #010630;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.whatsapp-preview {
+    display: none;
+    margin-top: 20px;
+    border-left: 4px solid #FF00B1;
+    padding-left: 12px;
+}
+
+.whatsapp-preview h3 {
+    font-size: 16px;
+    color: #FF00B1;
+    margin-bottom: 5px;
+}

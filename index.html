@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2TOR-IA - Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Transforma WhatsApp en tu aula virtual</h1>
+            <p>Aprende con cápsulas de conocimiento multimedia, evaluaciones personalizadas y resolución de dudas en tiempo real gracias a la inteligencia artificial.</p>
+        </div>
+    </section>
+    
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-container">
+                <h2>Regístrate en 2TOR-IA</h2>
+                
+                <div id="successAlert" class="alert alert-success">
+                    Registro exitoso. Por favor, revisa tu WhatsApp para comenzar.
+                </div>
+                
+                <div id="errorAlert" class="alert alert-error">
+                    Ha ocurrido un error. Por favor, intenta nuevamente.
+                </div>
+                
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <div class="phone-input">
+                            <select id="prefijo" name="prefijo">
+                                <option value="+57">+57 (Colombia)</option>
+                                <option value="+52">+52 (México)</option>
+                                <option value="+54">+54 (Argentina)</option>
+                                <option value="+56">+56 (Chile)</option>
+                                <option value="+51">+51 (Perú)</option>
+                                <option value="+34">+34 (España)</option>
+                                <option value="+1">+1 (USA/Canadá)</option>
+                            </select>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="curso">Selecciona un curso</label>
+                        <select id="curso" name="curso" required>
+                            <option value="" disabled selected>Seleccionar curso</option>
+                            <option value="alimentos">Manipulación de alimentos</option>
+                            <option value="tips-ia">Tips de IA generativa</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico (opcional)</label>
+                        <input type="email" id="email" name="email" placeholder="Ej. tu@correo.com">
+                    </div>
+                    
+                    <button type="submit">Registrarme</button>
+                </form>
+                
+                <div id="whatsappPreview" class="whatsapp-preview">
+                    <h3>¡Registro exitoso!</h3>
+                    <p>Acabamos de enviar un mensaje a tu WhatsApp. Revisa tu teléfono en los próximos 2 minutos para comenzar con tu aprendizaje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="java.js"></script>
+</body>
+</html>
